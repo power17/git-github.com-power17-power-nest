@@ -7,11 +7,12 @@
     {
       "name": "nest debug",
       "request": "launch",
-      "runtimeArgs": ["run-script", "start:dev"],
+      "runtimeArgs": ["run", "start:dev"],
       "runtimeExecutable": "npm",
       "skipFiles": ["<node_internals>/**"],
       "type": "node",
-      "console": "integratedTerminal"
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/book-management-system-backend"
     }
   ]
 }
