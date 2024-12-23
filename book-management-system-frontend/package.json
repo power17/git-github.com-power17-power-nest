@@ -17,6 +17,7 @@
     "react-router-dom": "^7.1.0"
   },
   "devDependencies": {
+    "@ant-design/icons": "^5.5.2",
     "@eslint/js": "^9.17.0",
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.17",

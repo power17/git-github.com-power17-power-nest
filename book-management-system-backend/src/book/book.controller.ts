@@ -1,6 +1,7 @@
 import {
   BadRequestException,
   Body,
+  Query,
   Controller,
   Delete,
   Get,
@@ -43,8 +44,8 @@ export class BookController {
     return file.path;
   }
   @Get('list')
-  async list() {
-    return this.bookService.list();
+  async list(@Query('name') name: string) {
+    return this.bookService.list(name);
   }
 
   @Get(':id')
