@@ -15,7 +15,7 @@ import { CreateBookDto } from './dto/create-book.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
 import * as path from 'path';
-
+import { storage } from './my-file-storage';
 @Controller('book')
 export class BookController {
   constructor(private readonly bookService: BookService) {}
